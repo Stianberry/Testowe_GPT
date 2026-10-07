@@ -1,0 +1,16 @@
+{
+  "openmontage": {"repo": "calesthio/OpenMontage", "commit": "9327439db69021ab4b0e2776729bf3b58fdb5a87"},
+  "hyperframes": {"repo": "heygen-com/hyperframes", "commit": "e6daed3df04d9b9373601e4293018ffa09023144"},
+  "video-use": {"repo": "browser-use/video-use", "commit": "b877063835e6ea6e457124da7e28a0ae26691dc3"},
+  "heygen-skills": {"repo": "heygen-com/skills", "commit": "1bd5e4d33a028dfed3abf504c5e3dd644fb9ea8a"},
+  "short-form-skills": {"repo": "iart-ai/tiktok-video-skills", "commit": "2a775336b5a638cbf8a61dbd785f9a1b649be016"},
+  "remotion-skills": {"repo": "remotion-dev/skills", "commit": "473352613039e718e46655a26df224851e84c4aa"},
+  "heygen-cli": {
+    "repo": "heygen-com/heygen-cli", "commit": "c505305bd9277adc10ffcf9bcc7c322f7bdd2cb7",
+    "binary": {
+      "url": "https://github.com/heygen-com/heygen-cli/releases/download/v0.9.0/heygen_v0.9.0_linux_amd64.tar.gz",
+      "archive_sha256": "a55b91f7c914e5acafdd9819cfc7b23e25e1bbf664e2b61b3e20f6ac64d68434",
+      "binary_sha256": "9863a00e44af75984354171a7f2a2667434a147c02e3f4cbd4aaee56ca765253"
+    }
+  }
+}

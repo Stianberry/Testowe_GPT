@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="pl"><head><meta charset="utf-8"><meta name="viewport" content="width=1080,height=1920"><title>Od informacji do filmu — test techniczny</title>
+<script src="assets/gsap.min.js"></script>
+<style>
+@font-face{font-family:Studio;src:url('assets/DejaVuSans.ttf')}@font-face{font-family:Studio;src:url('assets/DejaVuSans-Bold.ttf');font-weight:700}
+*{box-sizing:border-box}body{margin:0;background:#141b17;color:#f5f0e4;font-family:Studio,sans-serif}#root{position:relative;width:100%;height:100%;overflow:hidden}.clip{position:absolute;inset:0}.top{position:absolute;top:115px;left:90px;font-size:28px;letter-spacing:4px;color:#cae396}.step{position:absolute;top:115px;right:90px;font-size:28px;color:#cae396}h1{position:absolute;top:235px;left:90px;margin:0;font-size:90px;line-height:1.16;letter-spacing:-4px;max-width:900px}.sub{position:absolute;top:570px;left:94px;width:850px;font-size:38px;line-height:1.55;color:#d0d3c7}.card{position:absolute;left:100px;width:880px;height:150px;border:2px solid #465341;border-radius:18px;background:#1f2921;padding:38px 40px;font-size:38px}.card small{position:absolute;right:36px;top:50px;font-size:25px;color:#c8d0be}.c1{top:805px}.c2{top:995px}.c3{top:1185px}.origin{position:absolute;top:1435px;left:100px;width:880px;text-align:center;padding:36px;border-radius:14px;background:#cae396;color:#172315;font-size:36px;font-weight:700}.bar-row{position:absolute;left:100px;width:880px}.bar-row.one{top:845px}.bar-row.two{top:1120px}.bar-label{font-size:35px;margin-bottom:30px}.bar{height:95px;width:880px;background:#cae396;border-radius:8px;transform-origin:left center}.bar.dark{background:#81aba6}.bar-note{font-size:28px;margin-top:24px;color:#d0d3c7}.count{position:absolute;top:1470px;left:100px;color:#cae396;font-size:42px;font-weight:700}.check{position:absolute;left:105px;top:810px;font-size:43px;line-height:2.45}.check b{color:#cae396;margin-right:25px}.end{position:absolute;left:100px;top:1370px;width:880px;border-top:2px solid #465341;padding-top:42px;font-size:35px;line-height:1.6;color:#d0d3c7}.footer{position:absolute;left:90px;bottom:145px;font-size:25px;color:#c3cbba;letter-spacing:1px}.progress{position:absolute;left:0;bottom:0;width:1080px;height:12px;background:#cae396;transform-origin:left center}
+</style></head><body><div id="root" data-composition-id="main" data-start="0" data-width="1080" data-height="1920" data-duration="12">
+<section id="scene-one" class="clip" data-start="0" data-duration="4" data-track-index="0"><div class="top">REDAKCJA / ŹRÓDŁA</div><div class="step">01</div><h1 id="title-one">Trzy portale.<br>Jedna wiadomość.</h1><div class="sub">Powielenie informacji<br>nie jest nowym potwierdzeniem.</div><div class="card c1">Portal A<small>pierwotna publikacja</small></div><div class="card c2">Portal B<small>cytuje portal A</small></div><div class="card c3">Portal C<small>cytuje portal A</small></div><div class="origin">1 grupa pochodzenia</div></section>
+<section id="scene-two" class="clip" data-start="4" data-duration="4" data-track-index="0"><div class="top">REDAKCJA / WERYFIKACJA</div><div class="step">02</div><h1 id="title-two">Sprawdź<br>niezależnie.</h1><div class="sub">Szukamy osobnych ustaleń<br>i materiału pierwotnego.</div><div class="bar-row one"><div class="bar-label">Publikacja pierwotna</div><div class="bar" id="bar-one"></div><div class="bar-note">Co dokładnie wydarzyło się i kiedy?</div></div><div class="bar-row two"><div class="bar-label">Niezależne ustalenia</div><div class="bar dark" id="bar-two"></div><div class="bar-note">Co potwierdza osobne źródło?</div></div><div class="count">2 niezależne ścieżki weryfikacji</div></section>
+<section id="scene-three" class="clip" data-start="8" data-duration="4" data-track-index="0"><div class="top">REDAKCJA / MONTAŻ</div><div class="step">03</div><h1 id="title-three">Obraz ma<br>coś wyjaśniać.</h1><div class="sub">Każde ujęcie ma własny cel.<br>Każdy cytat zachowuje kontekst.</div><div class="check"><div class="item"><b>01</b>Rzeczywisty materiał</div><div class="item"><b>02</b>Sprawdzona informacja</div><div class="item"><b>03</b>Własny komentarz</div></div><div class="end">Najpierw rzetelny temat.<br>Potem świadomy montaż.</div></section>
+<div class="footer">PRZYKŁAD TECHNICZNY · DANE UMOWNE · BEZ NARRACJI</div><div id="progress" class="progress"></div></div>
+<script>
+window.__timelines=window.__timelines||{};
+const tl=gsap.timeline({paused:true});
+tl.from('#title-one',{y:35,opacity:0,duration:.6,ease:'power3.out'},.1);
+tl.from('#scene-one .sub',{opacity:0,duration:.5},.45);
+tl.from('#scene-one .card',{x:-45,opacity:0,duration:.55,stagger:.35,ease:'power3.out'},.8);
+tl.from('#scene-one .origin',{scale:.94,opacity:0,duration:.6,ease:'power2.out'},2.3);
+tl.from('#title-two',{y:35,opacity:0,duration:.6,ease:'power3.out'},4.1);
+tl.from('#bar-one',{scaleX:0,duration:1,ease:'power2.out'},4.8);
+tl.from('#bar-two',{scaleX:0,duration:1,ease:'power2.out'},5.8);
+tl.from('#scene-two .count',{y:25,opacity:0,duration:.5},7);
+tl.from('#title-three',{y:35,opacity:0,duration:.6,ease:'power3.out'},8.1);
+tl.from('#scene-three .item',{x:-25,opacity:0,duration:.55,stagger:.45,ease:'power3.out'},8.8);
+tl.from('#scene-three .end',{opacity:0,duration:.6},10.8);
+tl.fromTo('#progress',{scaleX:0},{scaleX:1,duration:12,ease:'none'},0);
+window.__timelines['main']=tl;
+</script></body></html>

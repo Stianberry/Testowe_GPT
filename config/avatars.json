@@ -1,0 +1,9 @@
+{
+  "default_backend": "sadtalker",
+  "device": "auto",
+  "max_audio_seconds": 15,
+  "timeout_seconds": 3600,
+  "sadtalker_size": 256,
+  "infinitetalk_size": "infinitetalk-480",
+  "infinitetalk_steps": 40
+}

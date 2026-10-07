@@ -1,0 +1,17 @@
+.venv/
+.tools/
+.cache/
+node_modules/
+data/
+.env
+dist/
+__pycache__/
+.pytest_cache/
+*.egg-info/
+*.log
+examples/quality-demo/assets/
+examples/quality-demo/renders/
+examples/quality-demo/snapshots/
+examples/quality-demo/.hyperframes/
+examples/quality-demo/output.mp4
+examples/quality-demo/check.json

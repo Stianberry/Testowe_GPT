@@ -1,0 +1,8 @@
+{
+  "name": "evidence-video-studio",
+  "private": true,
+  "version": "0.1.0",
+  "engines": {"node": ">=22"},
+  "dependencies": {"hyperframes": "0.8.139", "gsap": "3.14.2"},
+  "scripts": {"video:check": "hyperframes check examples/quality-demo --json", "video:render": "hyperframes render examples/quality-demo --fps 30 --quality looks --output examples/quality-demo/output.mp4"}
+}
